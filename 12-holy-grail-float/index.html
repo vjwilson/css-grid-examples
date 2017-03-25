@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Holy Grail Layout</title>
+  <style type="text/css">
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      min-width: 550px;      /* 2x LC width + RC width */
+    }
+    #container {
+      padding-left: 200px;   /* LC width */
+      padding-right: 150px;  /* RC width */
+    }
+    #container .column {
+      padding: 1em;
+      position: relative;
+      float: left;
+    }
+    #center {
+      background-color: #f3f3f3;
+      width: 100%;
+    }
+    #left {
+      background-color: pink;
+      width: 200px;          /* LC width */
+      right: 200px;          /* LC width */
+      margin-left: -100%;
+    }
+    #right {
+      background-color: chartreuse;
+      width: 150px;          /* RC width */
+      margin-right: -150px;  /* RC width */
+    }
+    #header,
+    #footer {
+      background-color: #e0e0e0;
+      padding: 2em;
+      text-align: center;
+    }
+    #footer {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">This is the header.</div>
+  <div id="container">
+    <div id="center" class="column">
+      <h1>This is the main content.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, rem consequuntur facere inventore neque. Maxime id at nihil, quia impedit unde consequuntur quibusdam, sint iste facilis natus laborum, dolore perspiciatis.</p>
+      <p>Vitae culpa quam odio harum laudantium quo exercitationem possimus tenetur adipisci libero assumenda explicabo modi mollitia delectus minus dignissimos optio, accusantium labore, inventore debitis. Dolorum, quidem perferendis minima voluptas numquam.</p>
+      <p>Fuga delectus in cum provident maxime accusamus veniam dolore, amet saepe debitis neque, officia quam facilis, dolorem culpa mollitia praesentium aliquam natus sapiente! Necessitatibus, molestiae eaque ipsam voluptatum nam a.</p>
+    </div>
+    <div id="left" class="column">
+      <h2>This is the left sidebar.</h2>
+      <ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div id="right" class="column">
+      <h2>This is the right sidebar.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis optio provident odio, nobis beatae voluptatibus rem, obcaecati laboriosam totam necessitatibus tempora exercitationem harum. Nam laborum provident asperiores quaerat, voluptates soluta.</p>
+    </div>
+  </div>
+  <div id="footer">This is the footer.</div>
+</body>
+</html>

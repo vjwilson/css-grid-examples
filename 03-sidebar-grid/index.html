@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar with Grid</title>
+  <style type="text/css">
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    .card-container {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(3, 1fr); /* makes it like flexbox with flex wrap */
+    }
+    .card {
+      border: 1px solid #ccc;
+    }
+    .card:nth-child(1) {
+      grid-column: 2 / 4;
+      /* short for:
+      grid-column-start: 2;
+      grid-column-end: 4;
+      */
+      grid-row: 1 / 3;
+      /* short for:
+      grid-row-start: 1;
+      grid-row-end: 3;
+      */
+    }
+    .card__header {
+      border-bottom: 1px solid #ccc;
+      padding: .5rem 1rem;
+    }
+    .card__header h2 {
+      margin: 0;
+    }
+    .card__body {
+      padding: .5rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sidebar with Grid</h1>
+  <div class="card-container">
+    <article class="card">
+      <header class="card__header">
+        <h2 class="card__title">Item 1</h2>
+      </header>
+      <div class="card__body">
+        <h2>Item 1 Body</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum amet a vero fugit fugiat saepe, earum minima possimus veritatis ea enim, consequuntur iste facere, eos, officiis sequi tempore quia voluptates?</p>
+    </article>
+    <article class="card">
+      <header class="card__header">
+        <h2 class="card__title">Item 2</h2>
+      </header>
+      <div class="card__body">
+        <h2>Item 2 Body</h2>
+        <p>Quasi maiores nam consequuntur, beatae soluta. Eos necessitatibus dolorem consequuntur voluptatem ex vero voluptates. Autem, porro? Exercitationem ipsum officiis possimus, commodi amet error incidunt at, quis odit et atque molestiae.</p>
+    </article>
+    <article class="card">
+      <header class="card__header">
+        <h2 class="card__title">Item 3</h2>
+      </header>
+      <div class="card__body">
+        <h2>Item 3 Body</h2>
+        <p>Labore eos, molestias accusantium, nesciunt a repellat, fugiat rerum voluptas blanditiis minus, eaque. Ipsam iusto nobis illum aspernatur cupiditate reiciendis odit eveniet, perferendis et, provident eius, saepe mollitia nulla tenetur.</p>
+    </article>
+    <article class="card">
+      <header class="card__header">
+        <h2 class="card__title">Item 4</h2>
+      </header>
+      <div class="card__body">
+        <h2>Item 4 Body</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum amet a vero fugit fugiat saepe, earum minima possimus veritatis ea enim, consequuntur iste facere, eos, officiis sequi tempore quia voluptates?</p>
+    </article>
+    <article class="card">
+      <header class="card__header">
+        <h2 class="card__title">Item 5</h2>
+      </header>
+      <div class="card__body">
+        <h2>Item 5 Body</h2>
+        <p>Quasi maiores nam consequuntur, beatae soluta. Eos necessitatibus dolorem consequuntur voluptatem ex vero voluptates. Autem, porro? Exercitationem ipsum officiis possimus, commodi amet error incidunt at, quis odit et atque molestiae.</p>
+    </article>
+    <article class="card">
+      <header class="card__header">
+        <h2 class="card__title">Item 6</h2>
+      </header>
+      <div class="card__body">
+        <h2>Item 6 Body</h2>
+        <p>Labore eos, molestias accusantium, nesciunt a repellat, fugiat rerum voluptas blanditiis minus, eaque. Ipsam iusto nobis illum aspernatur cupiditate reiciendis odit eveniet, perferendis et, provident eius, saepe mollitia nulla tenetur.</p>
+    </article>
+    <article class="card">
+      <header class="card__header">
+        <h2 class="card__title">Item 7</h2>
+      </header>
+      <div class="card__body">
+        <h2>Item 7 Body</h2>
+        <p>Quasi maiores nam consequuntur, beatae soluta. Eos necessitatibus dolorem consequuntur voluptatem ex vero voluptates. Autem, porro? Exercitationem ipsum officiis possimus, commodi amet error incidunt at, quis odit et atque molestiae.</p>
+    </article>
+    <article class="card">
+      <header class="card__header">
+        <h2 class="card__title">Item 8</h2>
+      </header>
+      <div class="card__body">
+        <h2>Item 8 Body</h2>
+        <p>Labore eos, molestias accusantium, nesciunt a repellat, fugiat rerum voluptas blanditiis minus, eaque. Ipsam iusto nobis illum aspernatur cupiditate reiciendis odit eveniet, perferendis et, provident eius, saepe mollitia nulla tenetur.</p>
+    </article>
+  </div>
+</body>
+</html>

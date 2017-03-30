@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar with Grid, Using Named ASCII Art</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <style type="text/css">
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    /* fix for Bootstrap in this context */
+    @media (min-width: 1200px) {
+    .container {
+          width: 100%;
+      }
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .bootstrap .row {
+      margin-bottom: 1em;
+    }
+
+    .bootstrap .row div,
+    .cssgrid div {
+      background-color: #eee;
+      border: 1px solid #ccc;
+    }
+
+     @media (min-width: 550px) {
+
+      .cssgrid {
+        display: grid;
+        grid-template-columns: repeat(12, [col] 1fr );
+        grid-template-rows: repeat(5, [row] auto) ;
+        grid-column-gap: 1em;
+        grid-row-gap: 15px;
+      }
+
+      .thorin {
+        grid-column: col / span 6;
+        grid-row: row 1;
+      }
+      .balin {
+        grid-column: col 7 / span 6;
+        grid-row: row 1;
+      }
+      .dwalin {
+        grid-column: col / span 4;
+        grid-row: row 2;
+      }
+      .fili {
+        grid-column: col 5 / span 4;
+        grid-row: row 2;
+      }
+      .kili {
+        grid-column: col 9 / span 4;
+        grid-row: row 2;
+      }
+      .oin {
+        grid-column: col / span 3;
+        grid-row: row 3;
+      }
+      .gloin {
+        grid-column: col 4 / span 6;
+        grid-row: row 3;
+      }
+      .ori {
+        grid-column: col 10 / span 3;
+        grid-row: row 3;
+      }
+      .nori {
+        grid-column: col / span 3;
+        grid-row: row 4;
+      }
+      .dori {
+        grid-column: col 4 / span 3;
+        grid-row: row 4;
+      }
+      .bifur {
+        grid-column: col 7 / span 3;
+        grid-row: row 4;
+      }
+      .bofur {
+        grid-column: col 10 / span 3;
+        grid-row: row 4;
+      }
+
+      .thorin2 {
+        grid-column: col / span 6;
+        grid-row: row 1 / span 2;
+      }
+      .balin2 {
+        grid-column: col 7 / span 6;
+        grid-row: row 1;
+      }
+      .dwalin2 {
+        grid-column: col 7 / span 4;
+        grid-row: row 2 / span 2;
+      }
+      .fili2 {
+        grid-column: col 11 / span 2;
+        grid-row: row 2;
+      }
+      .kili2 {
+        grid-column: col / span 3;
+        grid-row: row 3;
+      }
+      .oin2 {
+        grid-column: col 4 / span 3;
+        grid-row: row 3;
+      }
+      .gloin2 {
+        grid-column: col 11 / span 2;
+        grid-row: row 3;
+      }
+      .ori2 {
+        grid-column: col / span 4;
+        grid-row: row 4 / span 3;
+      }
+      .nori2 {
+        grid-column: col 5 / span 4;
+        grid-row: row 4 / span 2;
+      }
+      .dori2 {
+        grid-column: col 9 / span 4;
+        grid-row: row 4;
+      }
+      .bifur2 {
+        grid-column: col 9 / span 2;
+        grid-row: row 5;
+      }
+      .bofur2 {
+        grid-column: col 11 / span 2;
+        grid-row: row 5 / span 2;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Grid Columns, like Bootstrap</h1>
+    <div class="container bootstrap">
+      <h2>Bootstrap Grid</h2>
+        <div class="row">
+          <div class="col-md-6">6 col</div>
+          <div class="col-md-6">6 col</div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">4 col</div>
+          <div class="col-md-4">4 col</div>
+          <div class="col-md-4">4 col</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">3 col</div>
+          <div class="col-md-6">6 col</div>
+          <div class="col-md-3">3 col</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">3 col</div>
+          <div class="col-md-3">3 col</div>
+          <div class="col-md-3">3 col</div>
+          <div class="col-md-3">3 col</div>
+        </div>
+    </div>
+
+    <h2>CSS Grid</h2>
+    <div class="cssgrid">
+      <div class="thorin">Thorin</div>
+      <div class="balin">Balin</div>
+      <div class="dwalin">Dwalin</div>
+      <div class="fili">Fili</div>
+      <div class="kili">Kili</div>
+      <div class="oin">Oin</div>
+      <div class="gloin">Gloin</div>
+      <div class="ori">Ori</div>
+      <div class="nori">Nori</div>
+      <div class="dori">Dori</div>
+      <div class="bifur">Bifur</div>
+      <div class="bofur">Bofur</div>
+      <div class="bombur">Bombur</div>
+    </div>
+
+    <h2>CSS Grid with varying heights</h2>
+    <div class="cssgrid">
+      <div class="thorin2">Thorin</div>
+      <div class="balin2">Balin</div>
+      <div class="dwalin2">Dwalin</div>
+      <div class="fili2">Fili</div>
+      <div class="kili2">Kili</div>
+      <div class="oin2">Oin</div>
+      <div class="gloin2">Gloin</div>
+      <div class="ori2">Ori</div>
+      <div class="nori2">Nori</div>
+      <div class="dori2">Dori</div>
+      <div class="bifur2">Bifur</div>
+      <div class="bofur2">Bofur</div>
+      <div class="bombur2">Bombur</div>
+    </div>
+    <footer>
+      <p>This is the end</p>
+    </footer>
+  </div>
+</body>
+</html>

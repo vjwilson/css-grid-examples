@@ -13,14 +13,12 @@
 
     .card-container {
       display: grid;
-      /*grid-auto-rows: 300px auto 420px;*/
-
       grid-column-gap: 20px;
       grid-row-gap: 10px;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 300px 300px;
       grid-template-areas: "side1 main main"
-                          "side2 main main";
+                           "side2 main main";
     }
     .card {
       border: 1px solid #ccc;
@@ -29,23 +27,17 @@
       grid-area: main;
       background-color: hotpink;
     }
-    .card:nth-child(1) .card__header {
-      background-color: white;
-    }
     .card:nth-child(2) {
       grid-area: side1;
-    }
-    .card:nth-child(2) .card__body {
       background-color: lightskyblue;
     }
     .card:nth-child(3) {
       grid-area: side2;
-    }
-    .card:nth-child(3) .card__body {
       background-color: palegreen;
     }
 
     .card__header {
+      background-color: white;
       border-bottom: 1px solid #ccc;
       padding: .5rem 1rem;
     }

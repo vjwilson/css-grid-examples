@@ -12,16 +12,15 @@
     }
 
     .card-container {
-      align-content: space-between;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
     .card {
       border: 1px solid #ccc;
-      flex-basis: 32%;
-      flex-grow: auto;
-      flex-shrink: 1;
+      flex-basis: 32%;        /* can be shortened to */
+      flex-grow: 0;           /*   flex: 0 1 32%     */
+      flex-shrink: 1;         /* - - - - - - - - - - */
       margin-bottom: 1rem;
     }
     .card__header {

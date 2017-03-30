@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cards with Grid</title>
+  <style type="text/css">
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 400px 400px 400px;
+      grid-template-rows: 300px 300px 300px;
+      grid-gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Finally! Grid</h1>
+  <div class="grid-container">
+    <img src="images/kitten.jpg" alt="Kitten">
+    <img src="images/unbearably-cute-puppy.jpg" alt="Puppy">
+    <img src="images/chimp.jpg" alt="Chimp">
+    <img src="images/bear.jpeg" alt="Bear">
+    <img src="images/mignon-lemurien-de-madagascar.jpg" alt="Lemur">
+    <img src="images/murray.jpg" alt="Bill Murray">
+  </div>
+</body>
+</html>
